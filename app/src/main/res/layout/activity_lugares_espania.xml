@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lugares.LugaresEspania">
+
+    <TextView
+        android:id="@+id/textLugares"
+        android:layout_width="195dp"
+        android:layout_height="170dp"
+        android:gravity="center"
+        android:text="Lugares para visitar"
+        android:textColor="#069E1E"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="405dp"
+        android:layout_height="499dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLugares">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/btnlink3"
+                android:layout_width="392dp"
+                android:layout_height="100dp"
+                android:background="@drawable/shape"
+                android:backgroundTint="#069E1E"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnlink2"
+                app:layout_constraintVertical_bias="0.5"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="49dp"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center_vertical"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="30dp"
+                    android:maxHeight="30dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/iconolugar" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:maxLines="3"
+                    android:text="qweqweqweqweqweqwe"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnlink1"
+                android:layout_width="392dp"
+                android:layout_height="96dp"
+                android:background="@drawable/shape"
+                android:backgroundTint="#069E1E"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/btnlink2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textLugares"
+                app:layout_constraintVertical_bias="0.5"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="49dp"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center_vertical"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="30dp"
+                    android:maxHeight="30dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/iconolugar" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:maxLines="3"
+                    android:text="Plaza España. Está situada en Sevilla. bla asdasdasdasd asda as asdadasd asd "></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnlink2"
+                android:layout_width="392dp"
+                android:layout_height="100dp"
+                android:background="@drawable/shape"
+                android:backgroundTint="#069E1E"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/btnlink3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnlink1"
+                app:layout_constraintVertical_bias="0.5"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="49dp"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center_vertical"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="30dp"
+                    android:maxHeight="30dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/iconolugar" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:maxLines="3"
+                    android:text="Plaza España. Está situada en Sevilla. bla asdasdasdasd asda as asdadasd asd "></TextView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
