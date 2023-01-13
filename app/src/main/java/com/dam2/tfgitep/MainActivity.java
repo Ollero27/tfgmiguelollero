@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         DB = new DBHelper(this);
 
 
-
+//REGISTRO
 
         signup.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -22,11 +22,12 @@ public class LoginActivity extends AppCompatActivity {
         password = (EditText) findViewById(R.id.password1);
         btnlogin = (Button) findViewById(R.id.btnsignin1);
         DB = new DBHelper(this);
-        // calling the action bar
+
         ActionBar actionBar = getSupportActionBar();
 
-        // showing the back button in action bar
         actionBar.setDisplayHomeAsUpEnabled(true);
+
+        //LOGIN
 
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
